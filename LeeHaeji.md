@@ -2,7 +2,7 @@
 
 | SPA | MPA |
 |-|-|
-| SPA는 Single Page Application으로 한개의 페이지로 구성된 Application입니다. SPA는 CSR, Client Side Rendering 방식으로 렌더링합니다. SPA 방식이 모두 CSR인 것은 아닙니다. SPA는 웹 에플리케이션에 필요한 모든 정적 리소스, HTML, CSS, JavaScript를 최초 한 번에 다운로드합니다. 그 후에는 데이터를 받아올 때만 서버와 통신합니다. 즉, 첫 요청시 딱 한 페이지만 불러오고 페이지 이동 시 기존 페이지의 내부를 수정해서 보여주는 방식입니다. 그 이후 새로운 페이지 요청이 있을 때, 페이지 갱신에 필요한 데이터만 전달 받아서 페이지를 갱신합니다. | MPA는 Multiple Page Application으로 여러 개의 페이지로 구성된 Application입니다. MPA는 SSR, Server Side Application 방식으로 렌더링합니다. | MPA는 Multiple Page Application으로 여러 개의 페이지로 구성된 Application입니다. MPA는 SSR, Server Side Application 방식으로 렌더링합니다. MPA는 새로운 페이지를 요청할 때마다 정적 리소스, HTML, CSS, JavaScript를 다운로드합니다. 즉, 페이지 이동하거나 새로고침하면 전체 페이지를 다시 렌더링합니다. |
+| SPA는 Single Page Application으로 한개의 페이지로 구성된 Application입니다. SPA는 CSR, Client Side Rendering 방식으로 렌더링합니다. SPA 방식이 모두 CSR인 것은 아닙니다. SPA는 웹 에플리케이션에 필요한 모든 정적 리소스, HTML, CSS, JavaScript를 최초 한 번에 다운로드합니다. 그 후에는 데이터를 받아올 때만 서버와 통신합니다. 즉, 첫 요청시 딱 한 페이지만 불러오고 페이지 이동 시 기존 페이지의 내부를 수정해서 보여주는 방식입니다. 그 이후 새로운 페이지 요청이 있을 때, 페이지 갱신에 필요한 데이터만 전달 받아서 페이지를 갱신합니다. | MPA는 Multiple Page Application으로 여러 개의 페이지로 구성된 Application입니다. MPA는 SSR, Server Side Application 방식으로 렌더링합니다. MPA는 Multiple Page Application으로 여러 개의 페이지로 구성된 Application입니다. MPA는 SSR, Server Side Application 방식으로 렌더링합니다. MPA는 새로운 페이지를 요청할 때마다 정적 리소스, HTML, CSS, JavaScript를 다운로드합니다. 즉, 페이지 이동하거나 새로고침하면 전체 페이지를 다시 렌더링합니다. |
 
 ***2. CSR과 SSR에 대해 설명해주세요.***
 
