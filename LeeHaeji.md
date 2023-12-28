@@ -2,7 +2,7 @@
 
 | SPA | MPA |
 |-|-|
-| SPA는 Single Page Application으로 한개의 페이지로 구성된 Application입니다. SPA는 CSR, Client Side Rendering 방식으로 렌더링합니다. SPA 방식이 모두 CSR인 것은 아닙니다. SPA는 웹 에플리케이션에 필요한 모든 정적 리소스, HTML, CSS, JavaScript를 최초 한 번에 다운로드합니다. 그 후에는 데이터를 받아올 때만 서버와 통신합니다. 즉, 첫 요청시 딱 한 페이지만 불러오고 페이지 이동 시 기존 페이지의 내부를 수정해서 보여주는 방식입니다. 그 이후 새로운 페이지 요청이 있을 때, 페이지 갱신에 필요한 데이터만 전달 받아서 페이지를 갱신합니다. | MPA는 Multiple Page Application으로 여러 개의 페이지로 구성된 Application입니다. MPA는 SSR, Server Side Application 방식으로 렌더링합니다. MPA는 Multiple Page Application으로 여러 개의 페이지로 구성된 Application입니다. MPA는 SSR, Server Side Application 방식으로 렌더링합니다. MPA는 새로운 페이지를 요청할 때마다 정적 리소스, HTML, CSS, JavaScript를 다운로드합니다. 즉, 페이지 이동하거나 새로고침하면 전체 페이지를 다시 렌더링합니다. |
+| SPA는 Single Page Application으로 한개의 페이지로 구성된 Application입니다. SPA는 CSR, Client Side Rendering 방식으로 렌더링합니다. SPA 방식이 모두 CSR인 것은 아닙니다. <br> <br> SPA는 웹 에플리케이션에 필요한 모든 정적 리소스, HTML, CSS, JavaScript를 최초 한 번에 다운로드합니다. 그 후에는 데이터를 받아올 때만 서버와 통신합니다. <br> <br> 즉, 첫 요청시 딱 한 페이지만 불러오고 페이지 이동 시 기존 페이지의 내부를 수정해서 보여주는 방식입니다. 그 이후 새로운 페이지 요청이 있을 때, 페이지 갱신에 필요한 데이터만 전달 받아서 페이지를 갱신합니다. | MPA는 Multiple Page Application으로 여러 개의 페이지로 구성된 Application입니다. MPA는 SSR, Server Side Application 방식으로 렌더링합니다. <br> <br> MPA는 Multiple Page Application으로 여러 개의 페이지로 구성된 Application입니다. MPA는 SSR, Server Side Application 방식으로 렌더링합니다. MPA는 새로운 페이지를 요청할 때마다 정적 리소스, HTML, CSS, JavaScript를 다운로드합니다. <br> <br> 즉, 페이지 이동하거나 새로고침하면 전체 페이지를 다시 렌더링합니다. |
 
 ***2. CSR과 SSR에 대해 설명해주세요.***
 
@@ -21,3 +21,28 @@ JavaScript 호이스팅은 인터프리터가 코드를 실행하기 전에 함�
 즉, 호이스팅은 함수 내에서 아래쪽에 존재하는 내용 중 필요한 값들을 끌어올리는 것입니다. 
 실제로 코드가 끌어올려지는 건 아니며, 자바스크립트 Parser 내부적으로 끌어올려서 처리하는 것이며 parser가 해석할 때만 끌어올려져 실행됩니다.
 실제 메모리에는 변화가 없습니다.
+
+++ 변수 호이스팅 중 let과 const는 호이스팅이 되지 않는것으로 보이나 실제로는 호이스팅이 발생합니다.
+ 
+먼저 변수 호이스팅에 대해 간단하게 이야기하자면, 끌어올려진 변수는 undefined 값을 반환하며 심지어 그 변수를 사용 혹은 참조한 후에 선언 및 초기화하더라도, 여전히 undefined를 반환합니다. 아래는 그 예시입니다.
+
+```JavaScript
+/**
+ * Example 1
+*/
+
+var x;
+console.log(x === undefined); // true
+x = 3;
+```
+
+그러나 ECMAScript 2015의 let과 const는 변수를 블록의 상단으로 **끌어올리지만 초기화하지 않습니다.**
+변수가 선언되기 전에 블록 안에서 변수를 참조하게 되면 ReferenceError를 발생시키게 되는데, 변수는 블록 시작부터 선언이 처리될 때까지 "temporal dead zone"(TDZ)에 위치하게 되기 때문입니다.
+
+```JavaScript
+console.log(x); // ReferenceError
+let x = 3;
+```
+위 예시를 실행하면 에러가 발생하는 결과 때문에 let과 const는 호이스팅이 일어나지 않는것으로 보이지만 실제로는 변수를 블록의 상단으로 끌어올리는 호이스팅은 발생했습니다.
+
+++ 추가로 함수 호이스팅은 함수 선언에만 적용이 되고 함수 표현식에서는 사용할 수 없습니다.
