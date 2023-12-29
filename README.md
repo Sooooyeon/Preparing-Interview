@@ -1,11 +1,16 @@
-# Interview-preparing
-면접 스터디를 진행하는 레파지토리 입니다.
+# 💡Interview-preparing
+<span>$\scr{\normalsize{\color{#3384C6}기술 \ 면접 \ 스터디 }}$</span>를 진행하는 레파지토리 입니다 🤓
 
-### 스터디 진행 방식
+> ### 스터디 진행 방식
+> <p>매주 정해진 면접 질문에 대해 공부하고, 질문의 답변을 기록합니다.</p>
+> <p>3문제씩 진행하며, 기록한 내용을 암기하도록 합니다!</p>
+> <p>공부하며 기록한 내용을 Pull requests해주세요 :)</p>
+<br/>
 
-매주 정해진 문제에 대한 답변을 다음주까지 공부해오고,
-준비해온 답변들을 정리해 기록한다.
 
-! 매주 3문제씩 진행
 
-각자 공부한 것들을 정리해 PR을 보내주세요 : )
+
+## Questions
+[SPA와 MPA에 대해 설명해주세요.](https://github.com/Sooooyeon/Preparing-Interview/blob/main/Questions/SPA%EC%99%80%20MPA.md)<br/><br/>
+[CSR과 SSR에 대해 설명해주세요.](https://github.com/Sooooyeon/Preparing-Interview/blob/main/Questions/CSR%EA%B3%BC%20SSR.md)<br/><br/>
+[Hoisting이란 무엇인가요?](https://github.com/Sooooyeon/Preparing-Interview/blob/main/Questions/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85.md)
