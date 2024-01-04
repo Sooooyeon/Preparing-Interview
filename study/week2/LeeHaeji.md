@@ -1,6 +1,6 @@
 ## 1. Execution Context (실행 컨텍스트) 란? ##
 실행 컨텍스트(execution context)는 실행할 코드에 제공할 환경 정보들을 모아놓은 객체로, 자바스크립트의 동적 언어로서의 성격을 가장 잘 파악할 수 있는 개념입니다.
-실행 컨텍스트는 자동으로 생성되는 전역공간과 eval을 제외하고 함수를 실행하는 시점에 생성됩니다.
+실행 컨텍스트는 자동으로 생성되는 전역공간을 제외하고 함수를 실행하는 시점에 생성됩니다.
 
 [참고링크1](https://velog.io/@edie_ko/js-execution-context)</br>
 [참고링크2](https://blog.gamguma.dev/post/2022/04/js_execution_context)</br>
