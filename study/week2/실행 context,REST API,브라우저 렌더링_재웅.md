@@ -1,4 +1,4 @@
-1.REST API란?
+1.REST API란?<br>
 Representational State Transfer의 약자
 HTTP Method(Post,Get,Put,Delete)
 URI는 동사가 아닌 명사들로 이루어져야 한다
