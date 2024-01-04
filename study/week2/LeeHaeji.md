@@ -2,6 +2,9 @@
 실행 컨텍스트(execution context)는 실행할 코드에 제공할 환경 정보들을 모아놓은 객체로, 자바스크립트의 동적 언어로서의 성격을 가장 잘 파악할 수 있는 개념입니다.
 실행 컨텍스트는 자동으로 생성되는 전역공간과 eval을 제외하고 함수를 실행하는 시점에 생성됩니다.
 
+[참고링크1](https://velog.io/@edie_ko/js-execution-context)</br>
+[참고링크2](https://blog.gamguma.dev/post/2022/04/js_execution_context)</br>
+
 ## 2. 브라우저 렌더링 과정을 설명해주세요. ##
 1. HTML을 파싱하여 DOM트리를 생성합니다.
 브라우저에 사이트 주소를 입력을 하게되면 주소에 있는 서버가 약속된 HTML파일을 우리 브라우저로 전송이 됩니다. 이때, 전송받는 HTML 코드는 8비트의 데이터 형태, 즉 바이트 데이터로 전송이 됩니다.
@@ -15,7 +18,13 @@
 6. 만들어진 렌더트리를 따라 페인트 기록이 생성되게 되는데 페인트 기록에는 요소를 렌더링하는 순서, 지금까지의 정보를 바탕으로한 페이지를 여러개의 레이어로 나눈다음 위에 텍스트, 색, 이미지, 보더, 그림자 등을 모든 시각적인 부분을 그리는 작업이 진행됩니다.
 7. 페인트 단계가 끝나면 Composite단계가 진행이 되며 이 과정에서 앞서 페인트 단계에서 만들어 둔 여러가지 레이어를 스크린에 픽셀로 표현하게 되고 나누어져있던 레이어들을 하나로 합성해서 페이지를 만들게 됩니다.
 
+[참고링크1](https://youtu.be/z1Jj7Xg-TkU?si=0heJmOpxvUmjvl3h)</br>
+
 ## 3. Rest API란? ##
 REST API는 HTTP 요청을 통해 통신함으로써 리소스 내에서 레코드(=CRUD)의 작성, 읽기, 업데이트 및 삭제 등의 표준 데이터베이스 기능을 수행합니다.
 Rest API는 URI를 통해서 리소스, 즉 정보들을 식별합니다. 정보의 가공 방법은 Create, Read, Update, Delete가 있으며 Rest API는 웹의 통신 규약인 HTTP를 이용하기 때문에
 HTTP가 가지고 있는 method를 이용합니다. 즉, 생성은 post, 읽기는 get, 수정은 전체 내용을 교체하는 put과 부분을 변경하는 patch 메서드를 사용하며 삭제는 delete 메서드를 사용합니다.
+
+[참고링크1](https://www.ibm.com/kr-ko/topics/rest-apis)</br>
+[참고링크2](https://aws.amazon.com/ko/what-is/restful-api/)</br>
+[참고링크3](https://youtu.be/PmY3dWcCxXI?si=x-DWuanZBaO7Eqdb)</br>
