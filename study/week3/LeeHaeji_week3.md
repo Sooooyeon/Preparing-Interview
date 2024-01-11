@@ -24,6 +24,6 @@ https://velog.io/@wngud4950/%ED%81%B4%EB%A1%9C%EC%A0%80Closure%EB%9E%80
 ## 마이크로태스크 큐, 태스크 큐 ##
 
 이크로태스크 큐와 태스크 큐 모두 콜백함수가 들어가지만 들어가는 콜백 함수의 종류가 다릅니다.
-마이크로 태스크 큐에는 프로미스의 콜백 함수가 들어가며, 태스크 큐에는 셋타임아웃, 셋인터벌의 콜백 함수가 들어갑니다.
+마이크로 태스크 큐에는 Promise의 콜백 함수가 들어가며, 태스크 큐에는 setTimeout, setInterval의 콜백 함수가 들어갑니다.
 그리고 이벤트 루프는 마이크로 태스크 큐에 있는 모든 태스크를 먼저 처리하고 태스크 큐에있는 태스크를 처리합니다.<br>
 https://developer.mozilla.org/ko/docs/Web/API/HTML_DOM_API/Microtask_guide
