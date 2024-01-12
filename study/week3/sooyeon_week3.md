@@ -13,10 +13,17 @@ repaint는 reflow 과정이 끝난 후 재생성된 렌더 트리를 다시 그�
 
 
 ### 3. 마이크로태스크 큐, 태스크 큐에 대해 설명해주세요.
-자바스크립트는 '단일 스레드' 기반의 언어지만 여러 작업이 동시에 처리됩니다. 이러한 작업에 필요한 것이 '이벤트 루프'이며, 자바스크립트는 태스크를 처리하는 이벤트 루프를 통해 비동기 방식으로 동시 작업을 지원합니다.
+~~자바스크립트는 '단일 스레드' 기반의 언어지만 여러 작업이 동시에 처리됩니다. 이러한 작업에 필요한 것이 '이벤트 루프'이며, 자바스크립트는 태스크를 처리하는 이벤트 루프를 통해 비동기 방식으로 동시 작업을 지원합니다.
 비동기 작업은 태스크큐에서 대기하다가 콜 스택으로 넘어가서 실행되는데, 여기서 태스크큐는 마이크로 태스크(micro task)와 매크로 태스크(macro task)로 분리됩니다. 
 마이크로 태스크 큐는 매크로 태스크 큐에 비해 우선순위가 높아 콜 스택이 비워지면 마이크로 태스크 큐를 먼저 확인 후 실행하게 되고, 모든 마이크로 태스크 큐가 비워지면 매크로 태스크 큐를 실행합니다.
 콜백 함수를 매크로 태스크 큐로 넣는 함수들은 setTimeout, setInterval, setImmediate, I/O, UI 렌더링 등이 있으며,
-콜백 함수를 마이크로 태스크 큐로 넣는 함수들은 Promise, process.nextTick, Object.observe, MutationObserver 등이 있습니다.</br></br>
+콜백 함수를 마이크로 태스크 큐로 넣는 함수들은 Promise, process.nextTick, Object.observe, MutationObserver 등이 있습니다.~~ </br></br>
 
-[참고링크1](https://haesoo9410.tistory.com/322) [참고링크2](https://meetup.nhncloud.com/posts/89)
+<p>$\scr{\normalsize{\color{#6580DD}👇수정 \ 답안 👇}}$</p>
+
+> 자바스크립트는 태스크를 처리하는 이벤트 루프를 통해 비동기 방식으로 동시 작업을 지원합니다.
+비동기 작업은 태스크큐에서 대기하다가 콜 스택으로 넘어가서 실행되는데, 여기서 태스크큐는 마이크로태스크(micro task)큐와 매크로태스크큐(macro task)로 분리됩니다.
+마이크로태스크큐는 매크로태스크큐에 비해 우선순위가 높아 콜 스택이 비워지면 마이크로태스크큐를 먼저 확인 후 실행하게 되고, 모든 마이크로태스크큐가 비워지면 매크로태스크큐를 실행합니다.
+마이크로태스크큐로 분리되는 함수로는 프라미스와 함께 쓰이는 .then/catch/finally 핸들러, MutationObserver 등이 있으며, 매크로태스크큐로 분리되는 함수들은 setTimeout, setInterval, setImmediate, I/O, UI 렌더링 등이 있습니다.
+
+[참고링크1](https://haesoo9410.tistory.com/322) [참고링크2](https://meetup.nhncloud.com/posts/89) [참고링크3](https://ko.javascript.info/event-loop)
