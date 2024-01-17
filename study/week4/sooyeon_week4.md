@@ -18,5 +18,12 @@
 
 [이벤트 루프 동작 구조](https://inpa.tistory.com/entry/%F0%9F%94%84-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84-%EA%B5%AC%EC%A1%B0-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
 
-### 3. JavaScript에서 비동기 실행은 어떻게 하나요?
+</br>
 
+### 3. JavaScript에서 비동기 실행은 어떻게 하나요?
+JavaScript에서는 async/await 방식으로 비동기 처리를 동기 처리처럼 구협합니다. 
+async/await는 Promise를 기반으로 동작하며, then/catch/finally와 같은 후속 처리 메서드 없이 마치 동기 처리처럼 사용할 수 있습니다.
+이전에 콜백 함수나 Promise를 사용해 비동기 처리를 할 때는 무조건 api를 호출한 후, 또 다른 콜백 함수를 실행하여 데이터의 처리가 가능했지만,
+async/await는 해당 함수 내부에서 바로 동기 처리처럼 데이터를 수정할 수 있습니다. 또한, try/catch 문으로 에러 처리도 훨씬 수월합니다.
+
+[비동기](https://www.howdy-mj.me/javascript/asynchronous-programming)
