@@ -21,7 +21,7 @@
 </br>
 
 ### 3. JavaScript에서 비동기 실행은 어떻게 하나요?
-JavaScript에서는 async/await 방식으로 비동기 처리를 동기 처리처럼 구현합니다. 
+JavaScript에서는 async/await 방식으로 비동기 실행을 동기 실행처럼 구현합니다. 
 async/await는 Promise를 기반으로 동작하며, then/catch/finally와 같은 후속 처리 메서드 없이 마치 동기 처리처럼 사용할 수 있습니다.
 이전에 콜백 함수나 Promise를 사용해 비동기 처리를 할 때는 무조건 api를 호출한 후, 또 다른 콜백 함수를 실행하여 데이터의 처리가 가능했지만,
 async/await는 해당 함수 내부에서 바로 동기 처리처럼 데이터를 수정할 수 있습니다. 또한, try/catch 문으로 에러 처리도 훨씬 수월합니다.
