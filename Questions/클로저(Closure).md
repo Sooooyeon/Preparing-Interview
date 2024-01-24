@@ -6,4 +6,6 @@
 <p>$\scr{\normalsize{\color{#69A65A}👇참고 \ 링크 👇}}$</p>
 
 [MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Closures)<br>
-[클로저](https://github.com/Esoolgnah/Frontend-Interview-Questions/blob/main/Notes/important-5/closure.md)
+[클로저](https://github.com/Esoolgnah/Frontend-Interview-Questions/blob/main/Notes/important-5/closure.md)<br>
+
+[🛠렉시컬 스코프에 관한 참고 링크](https://github.com/Sooooyeon/Preparing-Interview/blob/main/Questions/%EB%A0%89%EC%8B%9C%EC%BB%AC%20%ED%99%98%EA%B2%BD%EA%B3%BC%20%EB%A0%89%EC%8B%9C%EC%BB%AC%20%EC%8A%A4%EC%BD%94%ED%94%84.md)
