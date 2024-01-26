@@ -9,7 +9,9 @@ this의 값은 함수를 "호출"한 방법에 의해 결정이 됩니다.
 이렇게 동적으로 this 값이 결정되는데 일반 함수에서는 .bind 메소드로 호출되는 this의 값을 고정시킬 수 있습니다.
 
 화살표 함수에서의 this는 함수가 속해있는 곳의 상위 스코프의 this를 결정하게 되므로 정적 스코프입니다.
-화살표 함수에서는 .bind 메소드를 사용 할 수 없습니다. 가리킬 this를 고정시킬 수 없습니다.
+화살표 함수에서는 .bind 메소드를 사용 할 수 없습니다. 가리킬 this를 고정시킬 수 없습니다.<br/>
+[자바스크립트의 this는 무엇인가?](https://www.zerocho.com/category/JavaScript/post/5b0645cc7e3e36001bf676eb)<br/>
+[개발자 면접 단골질문 자바스크립트 this](https://www.youtube.com/watch?v=tDZROpAdJ9w&t=2s)
 
 ## React의 라이프 사이클에 대해 설명해주세요.
 React의 라이프 사이클에는 클래스형 컴포넌트 라이프 사이클 메서드와 함수형 컴포넌트 라이프 사이클 관리 Hook이 있습니다.
@@ -22,9 +24,9 @@ React의 라이프 사이클에는 클래스형 컴포넌트 라이프 사이클
 useEffect에 두 번째 매개변수에 state를 넣으면 첫 렌더링 될 때 한 번 실행, 그 다음부터는 state 값이 바뀔 때마다 실행됩니다.
 useEffect에 두 번째 매개변수에 배열을 아예 넣지 않으면 데이터와 관련 없이 리렌더링 시마다 실행됩니다. 
 useEffect에 두 번째 매개변수에 빈 배열을 넣으면 컴포넌트가 마운트 될 때만 실행됩니다.(한 번만 실행)
-useEffect에 componentWillUnmount에 해당하는 역할은 useEffect에 return으로 함수를 제공하면 됩니다.
-
-
+useEffect에 componentWillUnmount에 해당하는 역할은 useEffect에 return으로 함수를 제공하면 됩니다.<br/>
+[Function형 React의 라이프 사이클](https://velog.io/@ahsy92/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91-React%EC%9D%98-%EB%9D%BC%EC%9D%B4%ED%94%84-%EC%82%AC%EC%9D%B4%ED%81%B4-09q2s7uw)<br/>
+[React의 생명 주기 Life Cycle](https://www.zerocho.com/category/React/post/579b5ec26958781500ed9955)
 ## 이벤트 전파(버블링, 캡처링)에 대해 설명해주세요.
 이벤트 전파는 DOM에서 이벤트가 발생한 요소에서 상위나 하위로 이동하는 과정입니다.
 이벤트 전파에는 세가지 단계가 있습니다.
@@ -34,5 +36,5 @@ useEffect에 componentWillUnmount에 해당하는 역할은 useEffect에 return�
 브라우저는 클릭 이벤트에 대한 객체를 생성합니다.
 브라우저는 이벤트 대상을 찾기 시작하며 최상단인 window 객체부터 document,body 순으로 DOM 트리를 따라 내려가며 모든 캡처링 이벤트 리스너를 실행시키며 캡처링 단계가 발생합니다.
 이벤트 대상을 찾고 캡처링 단계가 끝나면 다시 DOM 트리를 따라 올라가며 모든 버블링 이벤트 리스너를 실행시키며 버블링 단계가 발생합니다.
-이렇게 이벤트 리스너가 캡처링,버블링 때 실행되는 것을 이벤트 전파라고 합니다.
-
+이렇게 이벤트 리스너가 캡처링,버블링 때 실행되는 것을 이벤트 전파라고 합니다.<br/>
+[JS 이벤트 전파와 이벤트 위임 이해하기](https://ingg.dev/event-delegation/)
