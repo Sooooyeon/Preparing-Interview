@@ -7,7 +7,7 @@
 [코어자바스크립트](https://ko.javascript.info/event-delegation)
 
 ## React Virtual DOM 작동 원리에 대해 설명해주세요. ##
-React는 실제 DOM의 UI를 가진 JavaScript 객체를 메모리상에 가지고 있습니다. 이 Vitual DOM은 변화를 감지하면 재조정(Reconcilation) 과정을 통해 실제 DOM과 동기화 합니다.
+React는 실제 DOM의 UI를 가진 JavaScript 객체를 메모리상에 가지고 있습니다. 이 virtual DOM은 변화를 감지하면 재조정(Reconcilation) 과정을 통해 실제 DOM과 동기화 합니다.
 재조정 과정은 크게 3단계로 나뉩니다. 먼저 UI가 변경을 감지하면 UI를 Virtual DOM으로 렌더링합니다. 이때 실제 화면 상에 렌더링 되는 것이 아니라 비교를 위한 가상 렌더링입니다.
 다음으로 현재 Virtual DOM과 이전 Virtual DOM을 비교해 차이를 계산합니다. 그 뒤 변경된 부분을 실제 DOM에 반영하면서 재조정을 끝냅니다.
 
